@@ -1,0 +1,45 @@
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.page-title{
+    font-size: 35px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+.name-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.small-title{
+    color: var(--text-color);
+    font-weight: bold;
+}
+:root{
+    --text-color: rgb(105 140 142);
+    --backround-color: rgb(223 238 240);
+}
+.user-avatar{
+    border-radius: 50%;
+}
+.dash-line{
+    margin-top: 30px;
+    border: 2px dashed black;
+}
+.link-title{
+    display: block;
+    margin: 20px;
+}
+.fa-solid{
+    color: rgb(222, 237, 13);
+    color: linear-gradient(to bottom,rgb(222, 237, 13),rgb(53, 53, 51));
+}
+.box-title{
+    width: 1000px;
+    height: 1030px;
+    background-color: var(--backround-color);
+    border: 2px solid black;
+    margin: 0 auto;
+    padding-left: 5px;
+}
+
