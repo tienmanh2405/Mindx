@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4</title>
+    <script src="https://kit.fontawesome.com/ac06c21241.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/Lesson4.css">
+</head>
+
+<body>
+    <div id="backtotop" class="form-page">
+        <header class="header-page">
+            <img src="../IMAGE/logo.png" alt="Logo page">
+            <nav class="nav-page">
+                <a href="#backtotop">Home</a>
+                <a href="#store-next">Cửa hàng</a>
+                <a href="#sale-next">Giảm giá</a>
+                <a href="#recruit-page">Tuyển dụng</a>
+            </nav>
+        </header>
+        <div id="top-page"><a href="#backtotop"><i class="fa-solid fa-plane-up" style="color: #282929;"></i></a></div>
+        <section class="section-home">
+            <h3 id="about-next" style="margin-top: 50px; margin-bottom: 50px;">ABOUT US</h2>
+                <p class="aboutus-content">WHO WE ARE</p>
+                <p class="aboutus-content">FASHION</p>
+                <p id="aboutus-content2">TM fashion là thương hiệu thời trang đường phố dẫn đầu xu hướng với phong cách
+                    thiết kế đơn giản, sành
+                    điệu,<br> sản phẩm tiêu chuẩn cao dành cho giới trẻ toàn cầu tự tin thể hiện cá tính.</p>
+                <img src="../IMAGE/aboutus.jpg" alt="Anh ao"
+                    style="width: 98%; height: 800px; margin: 0 10px 0 10px; border-radius: 10px;">
+        </section>
+        <section id="store-next" class="section-store">
+            <h3 style="margin: 100px 0 40px 0;">CỬA HÀNG</h3>
+            <ul>
+                <li><img class="img-store" src="../IMAGE/WHITETEE.jpg" alt="WHITETEE"> <br>
+                    <h4>LOVERING REGULAR TEE/WHITE</h4> <br>
+                    <p>99 $</p>
+                </li>
+                <li><img class="img-store" src="../IMAGE/BLACKTEE.jpg" alt="BLACKTEE"> <br>
+                    <h4>LOVERING REGULAR TEE/BLACK</h4> <br>
+                    <p>99 $</p>
+                </li>
+                <li><img class="img-store" src="../IMAGE/POSEIDONTEE.jpg" alt="POSEIDONTEE"> <br>
+                    <h4>LOVERING REGULAR TEE/POSEIDONTEE</h4> <br>
+                    <p>99 $</p>
+                </li>
+            </ul>
+        </section>
+        <section id="sale-next" class="section-sale">
+            <h3 style="margin: 100px 0 40px 0;">GIẢM GIÁ</h3>
+            <ul>
+                <li><img class="img-sale" src="../IMAGE/BLACKPOLO.jpg" alt="WHITETEE"> <br>
+                    <h4>LOVERING REGULAR TEE/WHITE</h4> <br>
+                    <p>59 $</p>
+                </li>
+                <li><img class="img-sale" src="../IMAGE/BLUEPOLO.jpg" alt="BLACKTEE"> <br>
+                    <h4>LOVERING REGULAR TEE/BLACK</h4> <br>
+                    <p>59 $</p>
+                </li>
+                <li><img class="img-sale" src="../IMAGE/BROWNPOLO.jpg" alt="POSEIDONTEE"> <br>
+                    <h4>LOVERING REGULAR TEE/POSEIDONTEE</h4> <br>
+                    <p>59 $</p>
+                </li>
+            </ul>
+        </section>
+        <div id="recruit-page" class="container">
+            <h3 style="text-align: center; margin: 70px;">TUYỂN DỤNG</h3>
+            <img src="../IMAGE/Screenshot 2023-09-08 164020.png" alt="Mo ta cong viec">
+            <h2 style="text-align: center; margin-top: 20px;">Điền thông tin ứng viên</h2>
+            <form action="process_recruitment.php" method="post">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="resume">Đính kèm hồ sơ (PDF hoặc Word):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+                <input type="submit" value="Gửi ứng tuyển">
+            </form>
+        </div>
+        <footer>
+            <p>Website mẫu: https://levents.asia</p>
+        </footer>
+    </div>
+</body>
+
+</html>
