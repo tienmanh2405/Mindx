@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So khac biet</title>
+</head>
+
+<body>
+    <script>
+        function findlier(arr) {
+            let chanCount = 0;
+            let leCount = 0;
+
+            for (let i = 0; i < 3; i++) {
+                if (arr[i] % 2 == 0) {
+                    chanCount++;
+                } else {
+                    leCount++;
+                }
+            }
+            if (chanCount > leCount) {
+                for (let num of arr) {
+                    if (num % 2 !== 0) {
+                        return num;
+                    }
+                }
+            }
+            else {
+                for (let num of arr) {
+                    if (num % 2 == 0) {
+                        return num;
+                    }
+                }
+            }
+        }
+        const arrA = [4, 1, 3, 5, 9];
+        console.log("So khac biet la: " + findlier(arrA));
+    </script>
+</body>
+
+</html>
