@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+</head>
+
+<body>
+    <h1>Hình Tam Giác Số 1</h1>
+    <label for="rowCount">Nhập số hàng (1-10):</label>
+    <input type="number" id="rowCount" min="1" max="10">
+    <button onclick="draw()">Vẽ Tam Giác</button>
+    <div id="Container"></div>
+    <script>
+        function draw() {
+            const rowCount = parseInt(document.getElementById("rowCount").value);
+            const Container = document.getElementById("Container");
+
+            if (rowCount < 1 || rowCount > 10 || isNaN(rowCount)) {
+                Container.innerHTML = "Số hàng không hợp lệ. Vui lòng nhập lại.";
+                return;
+            }
+
+            let HTML = "";
+            for (let i = 1; i <= rowCount; i++) {
+                let row = "* ".repeat(i);
+                HTML += row.trim() + "<br>";
+            }
+
+            Container.innerHTML = HTML;
+        }
+
+    </script>
+</body>
+
+</html>
