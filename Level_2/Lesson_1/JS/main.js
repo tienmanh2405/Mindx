@@ -74,10 +74,9 @@
 /////////////////////////////////////////////////////////////////// Bai 4
 let dsPhone = [
     {userName: "Alice", userNumber: "(816)-403-5456"},
-    {userName: "Daniel", userNumber: "(816)-403-5456"},
+    {userName: "Bob", userNumber: "(572)-566-2397"},
     {userName: "Cris", userNumber: "(864)-309-4841"},
-    {userName: "Alice", userNumber: "(864)-309-4841"},
-    {userName: "Alice", userNumber: "(864)-566-2397"},
+    {userName: "Alice", userNumber: "(816)-403-5456"},
 ];
 document.addEventListener("DOMContentLoaded", function(){
     savedsPhone();
