@@ -169,5 +169,3 @@ document.getElementById("btnDeleteReplace").addEventListener("click", function (
     savedsPhone();
     renderListDsPhone(dsPhone);
 });
-
-
